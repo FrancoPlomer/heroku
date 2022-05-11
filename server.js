@@ -10,6 +10,6 @@ const server = app.listen(port, () => {
     console.log(`Escuchando puerto ${port}`)
 })
 
-server.on(error => {
+server.on("error", error => {
     console.log("Error: ", error)
 })
